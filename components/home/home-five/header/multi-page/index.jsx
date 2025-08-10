@@ -14,7 +14,7 @@ function Header() {
 						<DesktopMenu />
 					</div>
 					<HeaderButton />
-					<MobileNavbar menuItemsData={menuItemsData} title="Sofax" />
+					<MobileNavbar menuItemsData={menuItemsData} title="Estetica" />
 				</nav>
 			</div>
 		</header>
