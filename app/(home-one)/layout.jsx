@@ -31,7 +31,7 @@ function LayoutFive({ children }) {
 		<>	
 			{/* Google tag (gtag.js) */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-RHED4NZ9ZK"></Script>
-        <Script>
+        <Script id="gtag-init">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
