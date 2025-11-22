@@ -1,5 +1,5 @@
 "use client";
-import Thumb from "@/public/images/v5/herothumb.png";
+import Thumb from "@/public/images/v5/hero-video-thumb.jpg";
 import Icon6 from "@/public/images/v5/icon6.png";
 import Icon7 from "@/public/images/v5/icon7.png";
 import Image from "next/image";
@@ -14,7 +14,7 @@ function HeroVideo() {
 				channel="youtube"
 				youtube={{ autoplay: 0 }}
 				isOpen={isOpen}
-				videoId="zE_WFiHnSlY"
+				videoId="fgNzmzmlKcc"
 				onClose={() => setOpen(false)}
 			/>
 			<Image src={Thumb} alt="Thumb" />
