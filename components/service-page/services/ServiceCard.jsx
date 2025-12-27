@@ -1,8 +1,9 @@
+import Link from "next/link";
 import Image from "next/image";
 
-function ServiceCard({ service: { title, description, icon } }) {
+function ServiceCard({ service: { title, description, icon, slug } }) {
 	return (
-		<div className="sofax-service-iconbox-wrap">
+		<Link href={`/services/${slug}`} className="sofax-service-iconbox-wrap">
 			<div className="sofax-service-iconbox-data">
 				<h4>{title}</h4>
 				<p>{description}</p>
@@ -10,7 +11,7 @@ function ServiceCard({ service: { title, description, icon } }) {
 			<div className="sofax-service-iconbox-icon">
 				<Image src={icon} alt="icon" />
 			</div>
-		</div>
+		</Link>
 	);
 }
 

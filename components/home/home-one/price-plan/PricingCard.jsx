@@ -10,15 +10,9 @@ function PricingCard({ pricing: { plan, price, img, features, highlighted, featu
 			</div>
 			<div className="sofax-pricing-price">
 				<h2>
-					$
-					{price.map((item) => {
-						if (item.id === frequency.id) {
-							return item.value;
-						}
-					})}
+					${typeof price === 'object' ? price[0].value : price}
 				</h2>
-
-				<p className="dynamic-value"> {frequency.label}</p>
+                {/* Removed dynamic frequency label */}
 			</div>
 			<div className="sofax-pricing-body">
 				<h5>Key features:</h5>
@@ -33,7 +27,7 @@ function PricingCard({ pricing: { plan, price, img, features, highlighted, featu
 			</div>
 			<div className="sofax-pricing-footer">
 				<Link className={`sofax-default-btn  d-block pill ${!highlighted && "outline-btn"}`} href="/contact-us">
-					Purchase now
+					Book Discovery Call
 				</Link>
 			</div>
 		</div>

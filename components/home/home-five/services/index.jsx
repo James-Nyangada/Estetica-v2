@@ -1,36 +1,7 @@
 import ServiceCard from "./ServiceCard";
-const servicesData = [
-	{
-		id: 1,
-		title: "Web Design & Development",
-		description:
-			"Creating and maintaining websites to ensure an effective online presence for your brand digitally.",
-	},
-	{
-		id: 2,
-		title: "Shopify Store Development",
-		description:
-			"End-to-end eCommerce store creation with high-conversion design and app integration.",
-	},
-	{
-		id: 3,
-		title: "E-commerce Solutions",
-		description:
-			"Assisting with the development and management of online stores for businesses engaged in ecommerce.",
-	},
-	{
-		id: 4,
-		title: "Web system development",
-		description:
-			"Building custom web applications tailored to specific business needs, enhancing functionality and user experience.",
-	},
-	{
-		id: 5,
-		title: "Search Engine Optimization",
-		description:
-			"Optimizing websites to improve their visibility and ranking on search engine results pages for traffic.",
-	},
-];
+import { servicesData } from "@/data/servicesData";
+
+const homeServicesData = servicesData.filter(service => service.id <= 5);
 function Services() {
 	return (
 		<section className="section sofax-section-padding2 bg-light" id="service">
@@ -42,7 +13,7 @@ function Services() {
 				</div>
 
 				<div className="sofax-service-table-wrap">
-					{servicesData.map((service) => (
+					{homeServicesData.map((service) => (
 						<ServiceCard key={service.id} service={service} />
 					))}
 				</div>

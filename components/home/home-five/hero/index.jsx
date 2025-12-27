@@ -10,10 +10,10 @@ function Hero() {
 			<div className="container">
 				<div className="sofax-section-title max-width1200 position-ralatiove">
 					<h1 className="slider-custom-anim-left" data-ani="slider-custom-anim-left" data-ani-delay="0.3s">
-						Digital solutions built for growth.
+						We Build AI-Driven Booking Systems for High-Ticket Safari & Travel Agencies.
 					</h1>
 					<p>
-						We design, develop, and scale websites, stores, and systems that drive results.
+						Stop losing $10k/month to manual bookings. We automate your sales funnel so you can focus on the guest experience.
 					</p>
 					<div className="sofax-hero5-shape1">
 						<Image src={Shape1} alt="Shape1" />

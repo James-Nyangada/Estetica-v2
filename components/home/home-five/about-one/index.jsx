@@ -18,12 +18,10 @@ function AboutOne() {
 					<div className="col-lg-6">
 						<div className="sofax-default-content tac">
 							<div className="tg-heading-subheading animation-style3">
-								<h2>We are loyal to innovative brands</h2>
+								<h2>We Prioritize Your Profit</h2>
 							</div>
 							<p>
-								We are a one-stop digital agency, taking care of everything from custom web design to
-								meticulous planning with strategies that increase your reach, drive traffic and
-								engagement. We build websites that are not only visually stunning but also optimized for performance and user experience. Our team of experts is dedicated to delivering high-quality services that meet the unique needs of each client, ensuring their satisfaction and success.
+								We aren&apos;t a generalist "one-stop" shop. We are a specialized growth partner for high-ticket Safari & Travel agencies. We replace manual tasks with automated booking engines that work 24/7, ensuring you never miss a $10k inquiry again.
 							</p>
 
 							<AboutCounter />

@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 const PortfolioList = dynamic(() => import("@/components/portfolio/PortfolioList"), {
 	ssr: false,
 });
+import VideoTestimonials from "@/components/portfolio/VideoTestimonials";
 
 export const metadata = {
 	title: "Our Work – Global Web Design & Development Projects",
@@ -17,6 +18,7 @@ function PortfolioPage() {
 		<>
 			<BreadCrumb title="Our Portfolio" />
 			<PortfolioList />
+            <VideoTestimonials />
 			<Faq />
 		</>
 	);

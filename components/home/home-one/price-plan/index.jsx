@@ -10,48 +10,43 @@ import PricingCard from "./PricingCard";
 const pricePlanData = [
 	{
 		id: crypto.randomUUID(),
-		plan: "Essential",
-		price: [
-			{ id: 1, value: 19 },
-			{ id: 2, value: 39 },
-		],
+		plan: "Growth Audit & Roadmap",
+		price: "5,000",
 		img: Icon7,
 		features: [
-			"Lead, deal, contact, calendar and pipeline management",
-			"Seamless data import and 400+ integrations",
-			"24/7, multi-language support",
+			"Full Sales Funnel Audit",
+			"Competitor Analysis",
+			"Implementation Roadmap",
+			"Conversion Rate Optimization Strategy",
 		],
 		featureIcon,
 		highlighted: false,
 	},
 	{
 		id: crypto.randomUUID(),
-		plan: "Professional",
-		price: [
-			{ id: 1, value: 49 },
-			{ id: 2, value: 69 },
-		],
+		plan: "Safari Growth Engine",
+		price: "25,000",
 		img: Icon5,
 		features: [
-			"Full email sync with templates, open, click tracking & emailing",
-			"Automations builder, including email sequences",
-			"Meeting, email and video call",
+			"Custom Safari Booking System",
+			"Automated CRM Integration",
+			"High-Convert Landing Pages",
+			"Priority AI Link Integration",
+            "Outcome Guarantee",
 		],
 		featureIcon,
 		highlighted: true,
 	},
 	{
 		id: crypto.randomUUID(),
-		plan: "Enterprise",
-		price: [
-			{ id: 1, value: 129 },
-			{ id: 2, value: 199 },
-		],
+		plan: "SEO & Authority Retainer",
+		price: "3,000/mo",
 		img: Icon6,
 		features: [
-			"Streamlined lead routing and account access control",
-			"Document and contract management with e-signatures",
-			"Revenue forecasts & reporting",
+			"High-Intent Keyword Dominance",
+			"Monthly Content Production",
+			"Technical SEO Maintenance",
+            "Performance Reporting",
 		],
 		featureIcon,
 		highlighted: false,
@@ -59,46 +54,22 @@ const pricePlanData = [
 ];
 
 function PricePlan() {
-	const frequencies = [
-		{ id: 1, label: "Per Yearly" },
-		{ id: 2, label: "Per Month" },
-	];
-
-	const [frequency, setFrequency] = useState(frequencies[0]);
-
-	function handleChange(e) {
-		if (e.target.checked) {
-			setFrequency(frequencies[1]);
-		} else {
-			setFrequency(frequencies[0]);
-		}
-	}
-
 	return (
 		<section className="section sofax-section-padding bg-light" id="pricing">
 			<div className="container">
 				<div className="sofax-section-title center pb-50">
 					<div className="tg-heading-subheading animation-style3">
-						<h2>Discover the right price plan for you</h2>
+						<h2>Invest in Your Growth</h2>
+                        <p>No subscriptions. No hidden fees. Just ROI-focused systems.</p>
 					</div>
 				</div>
 
-				<div className="pricing-btn">
-					<label>Per Month</label>
-					<div className="toggle-btn">
-						<input
-							className="form-check-input btn-toggle price-deck-trigger"
-							type="checkbox"
-							onChange={handleChange}
-						/>
-					</div>
-					<label>Per Year</label>
-				</div>
+				{/* Toggle removed */}
 
 				<div className="row" id="table-price-value">
 					{pricePlanData.map((pricing, index) => (
 						<FadeInStagger key={pricing.id} index={index} className="col-xl-4 col-md-6">
-							<PricingCard pricing={pricing} frequency={frequency} />
+							<PricingCard pricing={pricing} />
 						</FadeInStagger>
 					))}
 				</div>

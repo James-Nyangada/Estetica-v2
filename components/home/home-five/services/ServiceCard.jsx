@@ -1,5 +1,6 @@
 import Link from "next/link";
-function ServiceCard({ service: { id, title, description } }) {
+function ServiceCard({ service }) {
+	const { id, title, description, slug } = service;
 	return (
 		<div className="sofax-service-table-item">
 			<div className="sofax-service-table-title sofax-service-table-titlev5">
@@ -11,7 +12,7 @@ function ServiceCard({ service: { id, title, description } }) {
 				<p>{description}</p>
 			</div>
 			<div className="sofax-service-table-btn sofax-service-table-btnv5">
-				<Link className="sofax-default-btn pill outline-btn p15" href="/single-service">
+				<Link className="sofax-default-btn pill outline-btn p15" href={`/services/${service.slug}`}>
 					<svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							fillRule="evenodd"
